@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import AddUserForm from "./components/AddUserForm.styled";
-import UserInput from "./components/UserInput";
+import UserInput from "./components/UserInput.styled";
 
 const App = () => {
   const [user, setUser] = useState([

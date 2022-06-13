@@ -1,5 +1,5 @@
 const UserItems = (props) => {
-  return <li>{props.children}</li>;
+  return <li className="user-item">{props.children}</li>;
 };
 
 export default UserItems;

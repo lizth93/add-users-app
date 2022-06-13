@@ -12,7 +12,6 @@ const AddUserForm = (props) => {
       setIsValidName(true);
     }
     setEnteredValueName(e.target.value);
-    console.log(e.target.value);
   };
 
   const userAgeChange = (e) => {
@@ -20,7 +19,6 @@ const AddUserForm = (props) => {
       setIsValidAge(true);
     }
     setEnteredValueAge(e.target.value);
-    console.log(e.target.value);
   };
 
   const formSubmitHandler = (e) => {
@@ -41,7 +39,8 @@ const AddUserForm = (props) => {
 
     props.onAddUser(inputsComplete);
 
-    //pending send data
+    setEnteredValueName("");
+    setEnteredValueAge("");
   };
 
   return (
@@ -54,7 +53,6 @@ const AddUserForm = (props) => {
             placeholder="Please put your name"
             onChange={userNameChange}
             value={enteredValueName}
-            required
           ></input>
         </div>
         <div>
