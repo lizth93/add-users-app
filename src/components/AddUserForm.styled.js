@@ -2,6 +2,7 @@ import styled from "styled-components";
 import AddUserForm from "./AddUserForm";
 
 export default styled(AddUserForm)`
+  border-radius: 2rem;
   max-width: 60rem;
   margin: 3rem auto;
   font-weight: 600;
@@ -23,6 +24,8 @@ export default styled(AddUserForm)`
     input {
       min-width: -webkit-fill-available;
       border: 1px solid #74b816;
+      border-radius: 2rem;
+      padding: 0.5rem 1.2rem;
 
       &:focus {
         background-color: #e9fac8;
@@ -39,7 +42,7 @@ export default styled(AddUserForm)`
     background: #74b816;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
     cursor: pointer;
-    border-radius: 3rem;
+    border-radius: 2rem;
     max-width: 20rem;
   }
 `;

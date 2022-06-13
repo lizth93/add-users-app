@@ -17,7 +17,7 @@ const AddUserForm = (props) => {
 
   const userAgeChange = (e) => {
     if (enteredValueAge.trim().length > 0) {
-      setEnteredValueAge(true);
+      setIsValidAge(true);
     }
     setEnteredValueAge(e.target.value);
     console.log(e.target.value);
@@ -33,6 +33,13 @@ const AddUserForm = (props) => {
     if (enteredValueAge.trim().length === 0) {
       isValidAge(false);
     }
+
+    const inputsComplete = {
+      enteredValueName,
+      enteredValueAge,
+    };
+
+    props.onAddUser(inputsComplete);
 
     //pending send data
   };
