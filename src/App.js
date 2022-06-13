@@ -4,10 +4,7 @@ import AddUserForm from "./components/AddUserForm.styled";
 import UserInput from "./components/UserInput.styled";
 
 const App = () => {
-  const [user, setUser] = useState([
-    { userName: "Luz Edith", id: 1, age: 28 },
-    { userName: "Walter", id: 2, age: 29 },
-  ]);
+  const [users, setUser] = useState([]);
 
   const addUserHandler = (enteredData) => {
     setUser((prevUsers) => {
@@ -24,7 +21,7 @@ const App = () => {
   return (
     <div>
       <AddUserForm onAddUser={addUserHandler} />
-      <UserInput items={user} />
+      <UserInput items={users} />
     </div>
   );
 };

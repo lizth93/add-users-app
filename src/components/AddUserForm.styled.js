@@ -32,17 +32,4 @@ export default styled(AddUserForm)`
       }
     }
   }
-
-  .btn {
-    flex-grow: 0;
-    font: inherit;
-    padding: 0.5rem 1.5rem;
-    border: 1px solid #5c940d;
-    color: white;
-    background: #74b816;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
-    cursor: pointer;
-    border-radius: 2rem;
-    max-width: 20rem;
-  }
 `;
